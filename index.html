@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuenta Fluffy</title>
+    <link rel="icon" href="img/fluffy.png">
+
+</head>
+<body>
+
+    <!--- Menu encabezado --->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobrenosotros" onclick="seleccionar()">Nosotros</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contactenos</a></li>
+                    <li><a href="https://ignacio-j3.github.io/pagina-de-cuentas-pymes/" onclick="seleccionar()">Regresar</a></li>
+    
+                 </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+               <i class="fa fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Menu de incicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/fluffy.png" alt="">
+            </div>
+            <h1>Fluffy Tiendita</h1>
+            <h2>Instagram @fluffy.tiendita</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/fluffy.tiendita/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="sobrenosotros" class="content about">
+
+        <h2 class="title">Sobre Nosotros</h2>
+        <p>
+            TE INVITO A UN SUAVE VIAJE POR LA Fluffy.tiendita!<br>
+            Deja que nuestros accesorios hechos a mano te envuelvan con su ternura, personalizando tu día con nekomimis, pixel art e impresiones 3D.<br>
+            Transforma tu rutina en momentos ÚNICOS, junto a la Fluffy.tiendita y simplemente disfruta de ser TU MISMO ❤️<br>
+            Besitos en la cola.
+        </p>
+
+        <article>
+            <a href="#sobrenosotros" class="btn" onclick="mostrarFotos()">Mostar fotos referentes</a>
+            <a href="https://www.instagram.com/fluffy.tiendita/" class="btn"><i class="fa-brands fa-instagram"></i> Ver fotos en Instagram</a>
+        </article>
+
+        <div id="galeria-fotos" class="galeria-fotos" style="display: none;">
+            <div class="fila-fotos">
+                <img src="productos/1a.jpg" alt="foto1">
+                <img src="productos/2a.jpg" alt="foto2">
+                <img src="productos/3a.jpg" alt="foto3">
+            </div>
+            <div class="fila-fotos">
+                <img src="productos/4a.jpg" alt="foto4">
+                <img src="productos/5a.jpg" alt="foto5">
+                <img src="productos/6a.jpg" alt="foto6">
+            </div>
+            <div class="fila-fotos">
+                <img src="productos/7a.jpg" alt="foto7">
+            </div>
+        </div>
+
+    </section>
+    <script src="scriptbtn.js"></script>
+
+    <section id="contacto" class="content price">
+        <article class="contain">
+            <h2 class="title">Contactenos</h2>
+            <p>
+                Puedes realizar tu pedido y personalizarlo en nuestro instagram @fluffy.tiendita, <br> atendemos suavecito uwu. <br>
+                Hacemos envíos por pagar a todo Chile.<br>
+                Y participamos constantemente en eventos presenciales en diversas regiones del país.
+            </p>
+            <a href="https://www.instagram.com/fluffy.tiendita/" class="btn"><i class="fa-brands fa-instagram"></i><br>Instagram</a>
+        </article>
+
+    </section>
+
+    <section id="ubicacion" class="content ubicacion">
+    </section>
+    <!--<section id="ubicacion"class="content ubicacion">
+        <h2 class="title"></h2>
+        <figure class="map">
+            <img src="img/" height="220px" width="100%" alt="mapa">
+        </figure>
+    </section>-->
+    
+    <script src="script.js"></script>
+</body>
+</html>

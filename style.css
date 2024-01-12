@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background-color: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #00ff11;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #00ff11;
+}
+.nav-responsive{
+    
+    background-color: #0a9713;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* SECCION I N I C I O */
+.inicio{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.555)),
+    url(img/fondo2.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #bf00ff;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #bb00ff;
+}
+
+.logo {
+    margin-left: 0px;
+}
+
+.logo img {
+    width: 40%;
+}
+/**/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 20%;
+}
+
+.header {
+    height: 100vh !important;
+    background: linear-gradient(to top, rgba(1, 158, 248, 0.105), rgb(4, 4, 5)),url(img/) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 1%;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border-radius: 35px;
+    border: 4px solid #75009c;
+    color: #ffffff;
+    text-decoration: none;
+    background: #ff00bf;
+}
+
+.btn:hover {
+    background: none;
+    color: #ff00fb;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-block: 20px;
+}
+
+.about {
+    background: #1e2326;
+}
+
+.price {
+    background: url(img/fondo1.png) no-repeat center;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+.contain {
+    max-width: 70%;
+    background: rgba(0, 0, 0, 0.601);
+    width: 100%;
+    border-radius: 50px;
+    padding: 30px;
+}
+
+
+.ubicacion {
+    padding-top: 100px;
+    background: #1e2326;
+    padding-bottom: 0;
+}
+
+/*galeria*/
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+fila-fotos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.fila-fotos img {
+    width: calc(14.28% - 15px); 
+    height: auto;
+    border: 4px solid #00ff26; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.fila-fotos img:hover {
+    transform: scale(1.5); 
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .nav {
+        display: none;
+    }
+   
+    
+}
