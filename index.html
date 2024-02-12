@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Cuenta Fluffy</title>
     <link rel="icon" href="img/fluffy.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 <body>
@@ -63,24 +64,54 @@
         <article>
             <a href="#sobrenosotros" class="btn" onclick="mostrarFotos()">Mostar fotos referentes</a>
             <a href="https://www.instagram.com/fluffy.tiendita/" class="btn"><i class="fa-brands fa-instagram"></i> Ver fotos en Instagram</a>
+            <br> <br> <br>
         </article>
 
-        <div id="galeria-fotos" class="galeria-fotos" style="display: none;">
-            <div class="fila-fotos">
-                <img src="productos/1a.jpg" alt="foto1">
-                <img src="productos/2a.jpg" alt="foto2">
-                <img src="productos/3a.jpg" alt="foto3">
+        <div id="galeria-fotos" class="galeria-fotos swiper-container" style="display: none;">
+            <div class="swiper-wrapper">
+        
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/1a.jpg" alt="foto1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/2a.jpg" alt="foto2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/3a.jpg" alt="foto3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/4a.jpg" alt="foto4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/5a.jpg" alt="foto5">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/6a.jpg" alt="foto6">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container">
+                        <img src="productos/7a.jpg" alt="foto7">
+                    </div>
+                </div>
+        
             </div>
-            <div class="fila-fotos">
-                <img src="productos/4a.jpg" alt="foto4">
-                <img src="productos/5a.jpg" alt="foto5">
-                <img src="productos/6a.jpg" alt="foto6">
-            </div>
-            <div class="fila-fotos">
-                <img src="productos/7a.jpg" alt="foto7">
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-
+    
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     </section>
     <script src="scriptbtn.js"></script>
 
@@ -109,3 +140,15 @@
     <script src="script.js"></script>
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true, // Si deseas que el carrusel sea infinito
+            // Otros parámetros y opciones según sea necesario
+        });
+    });
+</script>

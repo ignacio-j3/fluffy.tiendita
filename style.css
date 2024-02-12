@@ -217,30 +217,79 @@ p {
 }
 
 /*galeria*/
+/* Estilo del contenedor del carrusel */
+.swiper-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: #1e1e1e;
+    border: 5px solid #75009c;
+    border-radius: 10%;
+    height: 70vh;
+}
 
-.galeria-fotos {
+/* Estilo de las diapositivas del carrusel */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #1e1e1e;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-fila-fotos {
+/* Estilo del contenedor */
+.container {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
-.fila-fotos img {
-    width: calc(14.28% - 15px); 
-    height: auto;
-    border: 4px solid #00ff26; 
-    border-radius: 8px; 
-    transition: transform 0.3s ease-in-out; 
+/* Estilo de la imagen */
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-.fila-fotos img:hover {
-    transform: scale(1.5); 
+/* Estilo de los botones de flecha */
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; /* Esquinas ligeramente redondeadas */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilo de la flecha de siguiente */
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: '\203A'; /* Unicode para la flecha derecha */
+}
+
+/* Cambio de color al pasar el ratón sobre los botones */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ajuste de posición de las flechas */
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
 }
 
 /* SECCION RESPONSIVE */
@@ -282,5 +331,8 @@ fila-fotos {
         display: none;
     }
    
-    
+    .swiper-container {
+        width: 90%;
+        max-width: none;
+    }
 }
